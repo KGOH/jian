@@ -1,0 +1,1 @@
+{:output-dir "jian/out", :optimizations :advanced, :main jian-ghp.core, :output-to "jian/out/main.js", :aot-cache true}
