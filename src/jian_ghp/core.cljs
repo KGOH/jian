@@ -5,7 +5,5 @@
 (defn page []
   [:b "TEST"])
 
-(defn mount []
+(defn ^:export mount []
   (rd/render [page] (.getElementById js/document "app")))
-
-(defonce start (mount))
