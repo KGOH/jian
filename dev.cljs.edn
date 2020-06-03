@@ -1,0 +1,8 @@
+^{:watch-dirs          ["src"]
+  :css-dirs            ["resources/public/css"]
+  :ring-server-options {:port 3000}}
+{:main                 jian-ghp.core
+ :output-to            "resources/public/js/main.js"
+ :output-dir           "resources/public/js/out"
+ :asset-path           "js/out"
+ :optimizations        :none}
