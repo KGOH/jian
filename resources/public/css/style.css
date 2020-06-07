@@ -1,0 +1,34 @@
+body {
+    margin: 0px;
+    overflow-y: scroll;
+    font-family: Times;
+}
+.content {
+    margin: 5% 20%;
+}
+
+.content>div,
+.content>div>div,
+.content>div>div>div,
+.content>div>div>div>div
+{
+    padding-bottom: 1rem !important;
+}
+.flex {
+    display: flex;
+}
+.header{
+    font-style: bold, italic;
+    font-size: 16px;
+}
+.planckbad{
+    width: 100%;
+}
+.xxl{font-size: 58px;}
+.xl{font-size: 40px;}
+.l{font-size: 23px;}
+.s{font-size: 13px;}
+.facts-header {
+    text-decoration: underline;
+    color: dodgerblue;
+}
