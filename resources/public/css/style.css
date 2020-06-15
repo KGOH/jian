@@ -2,6 +2,7 @@ body {
     margin: 0px;
     overflow-y: scroll;
     font-family: Times;
+    font-size: 1.2em;
 }
 .content {
     margin: 5% 20%;
@@ -17,18 +18,59 @@ body {
 .flex {
     display: flex;
 }
-.header{
+.header {
     font-style: bold, italic;
     font-size: 16px;
 }
-.planckbad{
+.fullwidth {
     width: 100%;
 }
-.xxl{font-size: 58px;}
-.xl{font-size: 40px;}
+h1, h2, h3 {
+    font-style: italic;
+    font-family: 'Noto Serif', serif;
+}
+h1 {
+    font-size: 3em;
+    letter-spacing: -0.04em;
+}
+h2 {
+    font-size: 2em;
+}
 .l{font-size: 23px;}
-.s{font-size: 13px;}
+
+aside {
+    margin-left: 1.5rem;
+}
 .facts-header {
     text-decoration: underline;
     color: dodgerblue;
+}
+
+.ok-before {
+    list-style: none;
+    padding: 0;
+}
+.ok-before li {
+    padding-left: 2rem;
+    text-indent: -1.7rem;
+}
+.ok-before li::before {
+    content: "👌 ";
+}
+
+.green {
+    color: #3abd7d;
+}
+
+.orange {
+    color: #f88359;
+}
+
+figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+figcaption {
+    width: 30%;
 }
