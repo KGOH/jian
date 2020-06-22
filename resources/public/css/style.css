@@ -1,11 +1,12 @@
 body {
     margin: 0px;
     overflow-y: scroll;
-    font-family: Times;
+    font-family: 'Noto Serif', serif;
     font-size: 1.2em;
 }
 .content {
-    margin: 5% 20%;
+    width: 52em;
+    margin: 0 auto;
 }
 
 .content>div,
@@ -27,34 +28,54 @@ body {
 }
 h1, h2, h3 {
     font-style: italic;
-    font-family: 'Noto Serif', serif;
 }
 h1 {
-    font-size: 3em;
+    font-size: 3.6rem;
     letter-spacing: -0.04em;
+    margin: 0.5em 0;
 }
 h2 {
-    font-size: 2em;
+    font-size: 2.5rem;
+    margin-bottom: 0;
 }
-.l{font-size: 23px;}
+h3 {
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+.l {
+    font-size: 1.3em;
+}
 
 aside {
-    margin-left: 1.5rem;
+    margin-left: 1.5em;
+    width: 51em;
+    position: relative;
 }
+
+.to-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
 .facts-header {
     text-decoration: underline;
     color: dodgerblue;
+    margin-left: 2em;
+    margin-bottom: 4em;
+    display: block;
 }
 
 .ok-before {
     list-style: none;
     padding: 0;
 }
-.ok-before li {
+.ok-before > li {
     padding-left: 2rem;
     text-indent: -1.7rem;
+    margin: 0.5em 0;
 }
-.ok-before li::before {
+.ok-before > li::before {
     content: "👌 ";
 }
 
@@ -66,11 +87,40 @@ aside {
     color: #f88359;
 }
 
+.blue {
+    color: #0458e7;
+}
+
 figure {
     margin-left: 0;
     margin-right: 0;
 }
 
 figcaption {
-    width: 30%;
+    width: 20em;
+}
+
+.jian-hands > figcaption {
+    position: absolute;
+}
+
+.jian-hands > img {
+    margin: -4em -4em 0;
+    width: 61em;
+}
+
+.ycuken > img,
+.qwerty > img,
+.layers > img {
+    margin: 0 -3em;
+}
+
+.ycuken > img,
+.layers > img {
+    width: 60em;
+}
+
+.icon {
+    height: 0.8em;
+    vertical-align: middle;
 }
