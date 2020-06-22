@@ -9,13 +9,6 @@ body {
     margin: 0 auto;
 }
 
-.content>div,
-.content>div>div,
-.content>div>div>div,
-.content>div>div>div>div
-{
-    padding-bottom: 1rem !important;
-}
 .flex {
     display: flex;
 }
