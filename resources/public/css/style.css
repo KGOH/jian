@@ -5,8 +5,13 @@ body {
     font-size: 1.2em;
 }
 .content {
+    width: 56em;
+    margin: 3em auto;
+}
+
+section > div {
     width: 52em;
-    margin: 0 auto;
+    margin: 2em;
 }
 
 .flex {
@@ -30,10 +35,15 @@ h1 {
 h2 {
     font-size: 2.5rem;
     margin-bottom: 0;
+    margin-top: 3em;
 }
 h3 {
     font-weight: 400;
     font-size: 1.7rem;
+}
+h4 {
+    font-family:  'Gill Sans', sans;
+    font-weight: 700;
 }
 
 .l {
@@ -42,8 +52,15 @@ h3 {
 
 aside {
     margin-left: 1.5em;
-    width: 51em;
+    width: 66rem;
     position: relative;
+}
+
+.info-table > aside {
+    width: 30rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .to-bottom {
@@ -116,4 +133,37 @@ figcaption {
 .icon {
     height: 0.8em;
     vertical-align: middle;
+}
+
+footer {
+    height: 10em;
+    position: relative;
+    margin: 2em;
+}
+
+.info-table {
+    padding: 1em 5em;
+    margin: 0 -5em;
+    background-color: #f9f5e4;
+    border-radius: 1em;
+    display: flex;
+}
+.table {
+    display: table;
+}
+.thead {
+    display: table-header-group;
+}
+.tr {
+    display: table-row;
+}
+.th, .td {
+    display: table-cell;
+    padding: 1em 1.5em;
+    text-align: center;
+}
+.th {
+    border-bottom: 1px solid black;
+    font-weight: 600;
+    font-family:  'Gill Sans', sans;
 }
