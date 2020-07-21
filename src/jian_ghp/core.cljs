@@ -4,8 +4,11 @@
 
 (def app-state (atom {}))
 
+(defn resource-path [name]
+  (str (:resources-path @app-state) name))
+
 (defn res-src [name] ;; Don't know how to set up paths, to work with figwheel and github pages properly
-  {:src (str (:resources-path @app-state) name)})
+  {:src (resource-path name)})
 
 (defn page []
   [:article.content
@@ -178,7 +181,7 @@
      [:div.flex
       [:div
        [:p "Ниже на двух картинках собраны действия всех кнопок в раскладках ЙЦУКЕН и QWERTY. Вы можете сделать скриншот и подглядывать в него в момент обучения раскладки Jian."]
-       [:p "👉 Скачать версию для печати — " [:a {:href "public/resources/cheat_sheet.pdf"} "pdf"]]]
+       [:p "👉 Скачать версию для печати — " [:a {:href (resource-path "cheat_sheet.pdf")} "pdf"]]]
       [:aside]]
      [:h3 "Раскладка ЙЦУКЕН"]
      [:figure.layers
