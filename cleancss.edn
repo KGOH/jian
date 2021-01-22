@@ -1,0 +1,31 @@
+{:application
+ {:functions :all
+  :pseudos   :all
+  :types     #{"figcaption"
+               "article"
+               "section"
+               "header"
+               "footer"
+               "figure"
+               "table"
+               "aside"
+               "tbody"
+               "small"
+               "div"
+               "img"
+               "h1"
+               "h2"
+               "h3"
+               "h3"
+               "h4"
+               "ul"
+               "br"
+               "li"
+               "i"
+               "p"
+               "b"}}
+ :build
+ {:import {:input-files ["resources/public/css/bootstrap-grid.min.css"
+                         "resources/public/css/style.css"]}
+
+  :export {:output-file "resources/public/css/cleancss.css"}}}

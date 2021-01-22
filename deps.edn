@@ -1,6 +1,7 @@
 {:paths ["src" "resources"]
  :deps {org.clojure/clojurescript {:mvn/version "LATEST"}
-        reagent                   {:mvn/version "LATEST"}}
+        reagent                   {:mvn/version "LATEST"}
+        cleancss/cleancss         {:mvn/version "0.1.1"}}
  :aliases {:dev {:extra-deps {binaryage/devtools        {:mvn/version "LATEST"}
                               com.bhauman/figwheel-main {:mvn/version "LATEST"}}}
            :prod {:main-opts ["-m cljs.main -co prod.cljs.edn -c jian-ghp.core"]} }}
